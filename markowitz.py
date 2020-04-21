@@ -3,6 +3,7 @@ import sys
 import numpy
 import statistics
 import random
+import pylab 
 
 
 
@@ -75,8 +76,14 @@ for x in inputFileNames:
 prices = numpy.transpose(prices)
 
 
+means = []
+stdevs = []
 for idx in range(0,1000):
     weights = randomWeights(len(inputFileNames))
     mean, stdev = avgAndStd(weights, prices)
+    means.append(mean)
+    stdevs.append(stdev)
     print(str(stdev) + "," + str(mean))
 
+pylab.plot(stdevs, means, "r+")
+pylab.show()
