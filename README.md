@@ -22,3 +22,9 @@ volatility, the net effect of the slippafge might be considered zero.
 Finally, when we are analyzing different instruments to include in our portfolio of strategies it is necessary to take into account the correlation with possible candidates.
 
 Ideally, we will look for low correlation assets to exploit the same strategy.
+
+### Sharpe ratio
+Assuming normal deviation of the returns, it expresses the excess of return we
+get assuming the risk of the portfolio/asset.
+
+Mathematically, is the (expectedReturn - riskFreeRate)/stddevOfReturns
